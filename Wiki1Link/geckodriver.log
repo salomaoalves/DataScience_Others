@@ -1,0 +1,77 @@
+1676584331682	geckodriver	INFO	Listening on 127.0.0.1:19767
+1676584331726	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileZsWEbu"
+1676584344105	Marionette	INFO	Marionette enabled
+1676584344120	Marionette	INFO	Listening on port 9047
+Read port: 9047
+Read port: 9047
+1676584345450	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZsWEbu/search.json.mozlz4", (void 0)))
+1676584355551	Marionette	INFO	Stopped listening on port 9047
+1676584611129	geckodriver	INFO	Listening on 127.0.0.1:30493
+1676584611157	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileyBUo2k"
+1676584613338	Marionette	INFO	Marionette enabled
+1676584613344	Marionette	INFO	Listening on port 11085
+Read port: 11085
+1676584613473	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyBUo2k/search.json.mozlz4", (void 0)))
+1676584624956	Marionette	INFO	Stopped listening on port 11085
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 693: TypeError: this.tablesData[table] is undefined
+1676584754472	geckodriver	INFO	Listening on 127.0.0.1:64169
+1676584754509	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileQdgqDp"
+1676584758243	Marionette	INFO	Marionette enabled
+1676584758248	Marionette	INFO	Listening on port 14741
+Read port: 14741
+1676584758406	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQdgqDp/search.json.mozlz4", (void 0)))
+1676584771699	Marionette	INFO	Stopped listening on port 14741
+1676585112608	geckodriver	INFO	Listening on 127.0.0.1:48149
+1676585112617	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofile6Y3LSp"
+*** You are running in headless mode.
+1676585114488	Marionette	INFO	Marionette enabled
+1676585114495	Marionette	INFO	Listening on port 32251
+Read port: 32251
+1676585114621	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6Y3LSp/search.json.mozlz4", (void 0)))
+1676585121241	Marionette	INFO	Stopped listening on port 32251
+1676585194845	geckodriver	INFO	Listening on 127.0.0.1:49629
+1676585194856	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofile9s6akl"
+*** You are running in headless mode.
+1676585196896	Marionette	INFO	Marionette enabled
+1676585196902	Marionette	INFO	Listening on port 12487
+Read port: 12487
+1676585197032	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9s6akl/search.json.mozlz4", (void 0)))
+1676585204326	Marionette	INFO	Stopped listening on port 12487
+1676585366711	geckodriver	INFO	Listening on 127.0.0.1:14117
+1676585366719	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofilebEYlYO"
+*** You are running in headless mode.
+1676585368580	Marionette	INFO	Marionette enabled
+1676585368587	Marionette	INFO	Listening on port 36937
+Read port: 36937
+1676585368712	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebEYlYO/search.json.mozlz4", (void 0)))
+1676585380388	Marionette	INFO	Stopped listening on port 36937
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 693: TypeError: this.tablesData[table] is undefined
+1676587322469	geckodriver	INFO	Listening on 127.0.0.1:55313
+1676587322535	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofileQjjhXY"
+*** You are running in headless mode.
+1676587327954	Marionette	INFO	Marionette enabled
+1676587327960	Marionette	INFO	Listening on port 11285
+Read port: 11285
+1676587328108	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQjjhXY/search.json.mozlz4", (void 0)))
+1676587339861	Marionette	INFO	Stopped listening on port 11285
+1676587393260	geckodriver	INFO	Listening on 127.0.0.1:58053
+1676587393272	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofileOaMIw2"
+*** You are running in headless mode.
+1676587397972	Marionette	INFO	Marionette enabled
+1676587397982	Marionette	INFO	Listening on port 28853
+Read port: 28853
+1676587398138	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOaMIw2/search.json.mozlz4", (void 0)))
+1676587409797	Marionette	INFO	Stopped listening on port 28853
