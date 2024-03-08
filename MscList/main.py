@@ -1,31 +1,4 @@
-import spotipy
-import spotipy.util as util
-from spotipy.oauth2 import SpotifyClientCredentials, SpotifyOAuth
 import config
-
-# # Variables
-CLIENT_ID = config.client_id
-CLIENT_SECRET = config.client_secret
-SCOPE = config.scope
-USER = config.username
-REDIRECT_URI = config.redirect_uri
-
-def connect(scope=''):
-
-    # Authentication
-    with_user = True
-    try:
-        if not with_user:
-            sp = spotipy.Spotify(client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, 
-                                                                                        client_secret=CLIENT_SECRET))
-        else:
-            sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID,
-                                                            client_secret=CLIENT_SECRET,
-                                                            redirect_uri=REDIRECT_URI,
-                                                            scope=scope))
-    except:
-        print('Unable to connect with Spotify')
-    return sp
 
 def get_uri(link):
     '''
@@ -34,7 +7,7 @@ def get_uri(link):
     return playlist_URI
 
 def playlist_info(playlist_link):
-    sp = connect(scope = 'playlist-read-private')
+    sp = config.connect(scope = 'playlist-read-private')
     playlist_URI = get_uri(playlist_link)
     for track in sp.playlist_tracks(playlist_URI)["items"]:
         #URI
@@ -72,7 +45,7 @@ playlist_link = "https://open.spotify.com/playlist/4bJUhMPraAFAKpZjnHtJw3"
 
 
 
-# # sp = connect()
+# # sp = config.connect()
 # # results = sp.current_user_saved_tracks()
 # # for idx, item in enumerate(results['items']):
 # #     #track = item['track']
@@ -89,7 +62,7 @@ playlist_link = "https://open.spotify.com/playlist/4bJUhMPraAFAKpZjnHtJw3"
 # #         playlists = None
 
 def get_playlist_info():
-    sp = connect(scope = 'playlist-read-private')
+    sp = config.connect(scope = 'playlist-read-private')
     results = sp.current_user_playlists(limit=50)
     for i, item in enumerate(results['items']):
         desc = item['description']
@@ -97,15 +70,3 @@ def get_playlist_info():
         name = item['name']
         url = item['external_urls']['spotify']
 
-
-ranges = ['short_term', 'medium_term', 'long_term']
-
-sp = connect(scope = 'user-top-read')
-for sp_range in ['long_term']:
-    print("range:", sp_range)
-
-    results = sp.current_user_top_artists(time_range=sp_range, limit=50)
-
-    for i, item in enumerate(results['items']):
-        print(i, item['name'])
-    input()
