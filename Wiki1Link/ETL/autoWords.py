@@ -1,8 +1,8 @@
 import re
-from ETL import common
+from Wiki1Link.ETL import connection
 from bs4 import BeautifulSoup
 
-DATA_ATUAL = common.DATA_ATUAL
+DATA_ATUAL = connection.DATA_ATUAL
 
 
 def get_links(lang):
@@ -68,6 +68,6 @@ def main(lang, link):
         return -1, -1
 
     # Get html
-    html = common.connect(lang, 'AutoIngest', '', link)
+    html = connection.connect(lang, 'AutoIngest', '', link)
 
     return extract_new_words(html)

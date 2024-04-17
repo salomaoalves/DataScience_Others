@@ -24,7 +24,7 @@ def print_welcome():
     print('Also, can input N words to show some infos, like it\'s degree, precceder and successor nodes, ...')
     print('Also related to the words inputed, info about the path between then is displayed.')
     print()
-    print('--------------------------------------Graphic-----------------------------------------------------------------------')
+    print('------------------------------------Graph Display--------------------------------------------------------------------')
     print('It\'ll print all the graph.')
 
 def main():

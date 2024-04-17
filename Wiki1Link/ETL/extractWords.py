@@ -1,7 +1,7 @@
 import re
-from ETL import common, neo4jFunc
+from ETL import neo4jFunc, connection, common
 from bs4 import BeautifulSoup
-      
+
 
 def from_str_to_list(string):
     '''each caracther is a element'''
@@ -149,7 +149,7 @@ def main(lang, word, suffix):
 
     # If empty, find a possible suffix
     if suffix=='':
-        suffix = common.get_suffix(lang, word)
+        suffix = connection.get_suffix(lang, word)
 
     # Check if word is already ingested
     if word in ingested_word:
@@ -159,7 +159,7 @@ def main(lang, word, suffix):
     while True:
 
         # Make connection and treat any error
-        html = common.connect(lang, word, suffix)
+        html = connection.connect(lang, word, suffix)
         if html=='':
             return -2, word
         
